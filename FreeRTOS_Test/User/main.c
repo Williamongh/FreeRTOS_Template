@@ -20,23 +20,32 @@
   */  
 
 /* Includes ------------------------------------------------------------------*/
-#include "stm32f10x.h"
-//#include "stm32_eval.h"
-#include "stdio.h"
+#include "include.h"
 
 /**
   * @brief  Main program.
   * @param  None
   * @retval None
   */
+
+					
+
+
 int main(void)
 {
-  while (1)
-  {
-		
-  }
+	
+		Hardware_Init();
+
+		FreeRTOS_Init();
+	
+		while (1)
+		{
+
+		}
 	
 }
+
+
 
 
 

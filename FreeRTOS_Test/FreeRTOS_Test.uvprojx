@@ -373,7 +373,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_HD, USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>.\User;.\Libraries;.\Libraries\CMSIS;.\Libraries\STM32F10x_StdPeriph_Driver\inc;.\FreeRTOS\inc</IncludePath>
+              <IncludePath>.\User;.\Libraries;.\Libraries\CMSIS;.\Libraries\STM32F10x_StdPeriph_Driver\inc;.\FreeRTOS\inc;.\Hardware</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -422,9 +422,9 @@
               <FilePath>.\User\main.c</FilePath>
             </File>
             <File>
-              <FileName>stm32f10x_conf.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\User\stm32f10x_conf.h</FilePath>
+              <FileName>user_tasks.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\User\user_tasks.c</FilePath>
             </File>
             <File>
               <FileName>stm32f10x_it.c</FileName>
@@ -432,9 +432,39 @@
               <FilePath>.\User\stm32f10x_it.c</FilePath>
             </File>
             <File>
+              <FileName>Init.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\User\Init.c</FilePath>
+            </File>
+            <File>
+              <FileName>include.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\User\include.h</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f10x_conf.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\User\stm32f10x_conf.h</FilePath>
+            </File>
+            <File>
               <FileName>FreeRTOSConfig.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\User\FreeRTOSConfig.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Hardware</GroupName>
+          <Files>
+            <File>
+              <FileName>UART.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\UART.c</FilePath>
+            </File>
+            <File>
+              <FileName>UI.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\UI.c</FilePath>
             </File>
           </Files>
         </Group>
